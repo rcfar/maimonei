@@ -1,0 +1,70 @@
+/* Estilos gerais */
+.prose {
+    color: #374151;
+    max-width: 65ch;
+    line-height: 1.75;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+    color: #1F2937;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.dark .prose {
+    color: #D1D5DB;
+}
+
+.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
+    color: #F9FAFB;
+}
+
+.prose p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.prose a {
+    color: #4F46E5;
+    text-decoration: underline;
+}
+
+.dark .prose a {
+    color: #818CF8;
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade para tabelas */
+@media (max-width: 640px) {
+    .responsive-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Estilos para cards de blog */
+.blog-card {
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para gráficos */
+.chart-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+} 
